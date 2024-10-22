@@ -16,13 +16,35 @@ function pulaLinha (){
             pulaLinha()
         }
 
+        function calcularIMC (peso, altura){
+            return imc = peso/(altura*altura)
+
+        }
+
         let pesoLucas = 60
         let alturaLucas = 1.71
 
         let imcLucas = pesoLucas/(alturaLucas*alturaLucas)
+        let nome = prompt ('Qual o seu peso?')
+        let alturaInformada = prompt (`${nome}, qual sua altura? (Utilize ponto no lugar de vírgula)`)
+        let pesoInformado = prompt (`${nome}, qual seu peso?`)
 
-        mostra (` O IMC de Lucas é $(imcLucas)`)  // templatestring
-        mostra (' O IMC de Lucas é ' + imcLucas)
+        let imcCalculado = calcularIMC (pesoInformado, alturaInformada)
+
+        mostra (`${nome} O IMC de Lucas é ${imcLucas}`)  // temple string
+        mostra (' O IMC de Lucas é ' + imcLucas) // concentração normal
+
+        if(imcCalculado > 25) {
+            mostra (`${nome}, o seu imc está acima do ideal`)
+        }
+             else if (imcCalculado < 18) {
+                mostra(`${nome}, o seu imc está abaixo do ideal` )
+        } 
+             else {
+            mostra(`${nome}, o seu imc está ideal`)
+        }
+
+
     </script>
 </body>
 </html>
