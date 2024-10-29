@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anos das Olimpíadas</title>
+    <title>Média</title>
 </head>
-
 <body>
     <script>
 
-        function pulaLinha() {
+
+function pulaLinha() {
             document.write('<br><br>')
         }
         function mostra(texto) {
             document.write(texto)
             pulaLinha()
         }
-        // Em 1896 foi a primeira olimpíadas
 
-        let anoInicial = 1896
+let materia = prompt ('Qual é a matéria?')
 
-        while (anoInicial <= 2024) {
-            mostra(`${anoInicial} teve Olimpíadas`)
-            anoInicial = anoInicial + 4
-        }
+let trimestre = parseInt(prompt ('Quantos trimestres você fez?'))
+
+let totalNotas = 0
+
+for (let contador = 1; contador <= trimestre; contador++){
+
+let nota = prompt ('Qual é a sua nota?')
+
+let totalNotas = totalNotas + nota
+}
+
+let media = totalNotas/trimestre
+
+mostra (media)
+
 
 
     </script>
 </body>
-
-</html> 
+</html>
