@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+
+ margin: 0;
+ padding: 0;
+
+}
+
+:root{
+    --fonte-título: "Mukta", sans-serif;
+    --fonte-texto:"Raleway", sans-serif;
+
+    --cor1: #e7ecefff;
+    --cor2: #274c77ff;
+    --cor3: #6096baff;
+    --cor4: #a3cef1ff;
+    --cor5: #8b8c89ff;
+}
+
+body{
+background-color: var(--cor4);
+font-family: var(--fonte-texto);
+
+}
+
+header, footer{
+background-color: var(--cor2);
+padding: 2em;
+color: var(--cor3);
+text-align: center;
+font-family: var(--fonte-título);
+font-size: 1.5em;
+
+}
+footer{
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+footer a{
+
+    text-decoration:none;
+    color: var(--cor5);
+
+}
